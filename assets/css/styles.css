@@ -1,0 +1,41 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sponsor-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.sponsor-images img {
+    width: 150px;
+    height: 150px; 
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+    .sponsor-images img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+.footer-socials {
+
+}
+
+.footer-socials svg{
+    width: 50px;
+    height: 50px; 
+    object-fit: contain;
+}
