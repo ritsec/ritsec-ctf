@@ -19,7 +19,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-image: linear-gradient(rgb(0, 0, 0), 35%, rgba(0, 0, 0, 0));
+  background-image: linear-gradient(rgb(0, 0, 0), 33%, rgba(0, 0, 0, 0), 60%, rgb(0, 0, 0));
 }
 
 @keyframes fadeInAnimation {
@@ -55,11 +55,23 @@ p {
   margin-bottom: 1rem;
 }
 
-section {
+.sections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sections section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 2rem;
-  background-color: rgba(45, 45, 51, 0.4);
+  background-color: rgba(45, 45, 51, 0.8);
   padding: 0.5%;
   border-radius: 8px;
+}
+.sections .subsections {
+  display: flex;
+  flex-direction: row;
 }
 
 .background-container {
@@ -78,17 +90,25 @@ section {
   height: 100%;
   pointer-events: none;
   background-image: url("/assets/images/lock_doodle.svg");
-  background-size: 10%;
+  background-size: 8%;
   background-repeat: repeat;
-  animation: floatBackground 30s infinite linear;
+  animation: floatBackground 50s infinite linear;
 }
 
 @keyframes floatBackground {
   0% {
     background-position: 0% 0%;
+    opacity: 0%;
+  }
+  2% {
+    opacity: 100%;
+  }
+  98% {
+    opacity: 100%;
   }
   100% {
-    background-position: 100% 100%;
+    background-position: 97% 97%;
+    opacity: 0%;
   }
 }
 .navigation {
@@ -98,6 +118,8 @@ section {
   align-items: center;
 }
 .navigation .navigation-links {
+  display: flex;
+  gap: 1em;
   font-size: 1.25rem;
 }
 .navigation .navigation-links > a:hover {
@@ -121,6 +143,7 @@ section {
 .sponsor-images {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
   gap: 20px;
 }
@@ -128,8 +151,7 @@ section {
   width: 150px;
   height: 150px;
   object-fit: contain;
-  border-radius: 8px;
-  background-color: var(--card);
+  border-radius: 20%;
 }
 
 #FM, #mindex {
@@ -138,11 +160,13 @@ section {
 
 footer {
   padding: 1em;
+  color: var(--link);
 }
 footer .footer-socials {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1em;
 }
 footer .footer-socials svg {
   width: 50px;
