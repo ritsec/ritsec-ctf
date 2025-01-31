@@ -69,7 +69,7 @@ p {
         flex-direction: column;
         align-items: center;
         margin: 2rem;
-        background-color: rgba($background-color, 0.8);
+        background-color: rgba($background-color, 0.85);
         padding: 0.5%;
         border-radius: 8px;
     }
@@ -77,21 +77,28 @@ p {
         margin-left: 7rem;
         margin-right: 7rem;
     }
-    .subsections {
+    .subsections-row-one {
         display: flex;
         flex-direction: row;
         width: auto;
         height: auto;
         align-items: center;
-        .registration {
-            height: fit-content;
-        }
-        .prizes {
-            height: fit-content;
-        }
+        .theme-description, .rules, .prizes {
+                flex: 1;
+            }
+    
     }
 }
-
+#ctf23 {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+#ctf24 {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
 
 
 .background-container {
@@ -141,7 +148,7 @@ p {
 
     .navigation-links {
         display: flex;
-        gap: 1em;
+        gap: 1.5em;
         font-size: 1.25rem;
         > a {
             &:hover {
@@ -172,25 +179,29 @@ p {
 
 .sponsors {
     display: flex;
-    flex-direction: column;
     .sponsor-images {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
         width: 100%;
-    
+        gap: 3em;
         img {
             width: 150px;
             height: 150px;
             object-fit: contain;
             border-radius: 20%;
-            //background-color: var(--card);
+            background-color: var(--text);
         }
 
         div {
             display: flex;
+            flex-direction: column;
             justify-content: center;
-            gap: 20px;
+            gap: 1em;
+            .imgset {
+                display: flex;
+                flex-direction: row;
+            }
         }
     }
 }
