@@ -19,7 +19,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-image: linear-gradient(rgb(0, 0, 0), 33%, rgba(0, 0, 0, 0), 60%, rgb(0, 0, 0));
+  background-image: linear-gradient(rgb(0, 0, 0), 25%, rgba(0, 0, 0, 0), 60%, rgb(0, 0, 0));
 }
 
 @keyframes fadeInAnimation {
@@ -170,6 +170,7 @@ p {
 
 .sponsors {
   display: flex;
+  margin-bottom: 1em;
 }
 .sponsors .sponsor-images {
   display: flex;
