@@ -179,13 +179,13 @@ p {
 
 .sponsors {
     display: flex;
-    margin-bottom: 1em;
     .sponsor-images {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         width: 100%;
         gap: 3em;
+        padding-bottom: 2em;
         img {
             width: 150px;
             height: 150px;
