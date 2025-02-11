@@ -55,6 +55,10 @@ p {
   margin-bottom: 1rem;
 }
 
+ul {
+  list-style: none;
+}
+
 .sections {
   display: flex;
   flex-direction: column;
@@ -81,13 +85,15 @@ p {
   height: auto;
   align-items: center;
 }
-.sections .subsections-row-one .theme-description, .sections .subsections-row-one .rules, .sections .subsections-row-one .prizes {
+.sections .subsections-row-one .theme-description, .sections .subsections-row-one .prizes {
   flex: 1;
 }
+.sections .subsections-row-one .rules {
+  flex: 2;
+}
 
-#ctf23 {
+#ctf18 {
   width: 100%;
-  max-width: 400px;
   height: auto;
 }
 
@@ -95,6 +101,11 @@ p {
   width: 100%;
   max-width: 300px;
   height: auto;
+}
+
+.previous-ctfs-imgs {
+  display: flex;
+  justify-content: baseline;
 }
 
 .background-container {
@@ -170,18 +181,20 @@ p {
 
 .sponsors {
   display: flex;
+  text-align: center;
 }
 .sponsors .sponsor-images {
   display: flex;
+  align-items: center;
   flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
   gap: 3em;
   padding-bottom: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 .sponsors .sponsor-images img {
-  width: 150px;
-  height: 150px;
+  width: 7em;
+  height: 7em;
   object-fit: contain;
   border-radius: 20%;
   background-color: var(--text);
@@ -218,13 +231,13 @@ footer .footer-socials svg {
 }
 
 @media (max-width: 768px) {
-  .sponsor-images img {
-    width: 120px;
-    height: 120px;
-  }
   .onpagelogo {
     width: 100px;
     height: auto;
+  }
+  .sponsors {
+    display: flex;
+    flex-direction: column;
   }
 }
 
