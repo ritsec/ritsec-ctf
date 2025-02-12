@@ -123,7 +123,7 @@ ul {
   width: 100%;
   height: 100%;
   pointer-events: none;
-  background-image: url("/assets/images/lock_doodle.svg");
+  background-image: url("/assets/images/lock_doodle_yellower.svg");
   background-size: 8%;
   background-repeat: repeat;
   animation: floatBackground 50s infinite linear;
