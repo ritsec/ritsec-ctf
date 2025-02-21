@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RITSEC CTF</title>
+
     <link rel="stylesheet" href="/assets/css/styles.css">
-    <link rel="icon" type="image/png" href="/assets/images/logo192.png">
+    <link rel="icon" type="image/png" href="/assets/images/favicon.ico">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -15,17 +17,30 @@
   <div class="background-container">
     <nav class="navigation">
         <img src="/assets/images/logo192.png" alt="RITSEC logo." class="onpagelogo">
-        <div class="navigation-links">
-            <a href="https://www.ritsec.club/">Home</a>
-            <a href="https://discord.gg/aNP8BupNmg">CTF Discord</a>
-            <a>Register</a>
-            <a href="https://ctftime.org/ctf/170">CTFTime</a>
+        <ul class="navigation-menu">
+          <li class="navigation-item">
+            <a href="https://www.ritsec.club/" class="navigation-link">Home</a>
+          </li>
+          <li class="navigation-item">
+            <a href="https://discord.gg/aNP8BupNmg" class="navigation-link">CTF Discord</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link">Register</a>
+          </li>
+          <li class="navigation-item">
+            <a href="https://ctftime.org/ctf/170" class="navigation-link">CTFTime</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
     </nav>
     <div class="main-container">
         <img src="assets/images/temp-logo-2025.png" alt="temporary placeholder for 2025 logo." class="logo25">
         <h1>RITSEC CTF 2025:</h1>
-        <h6>Friday March 28th 12:00 - Sunday March 30th 12:00 EST</h6>
+        <h6>Friday March 21st 16:00 - Sunday March 23rd 16:00 EST</h6>
         <div class="sections">
             <section class="about">
                 <h4>About</h4>
@@ -37,7 +52,7 @@
             </section>
             <div class="subsections-row-one">
               <section class="theme-description">
-                <h4>Description</h4>
+                <h4>Theme</h4>
                 <p>This is an emergency declaration public service announcement warning all humans. We have just received an encrypted message from the giant floating <strong>Alien</strong> ship hovering above Rochester, NY. We captured it here:</p>
                 <div class="alien-message">
                   <p>Jz!</p>
@@ -272,5 +287,6 @@
             </a>
           </div>
     </footer>
+    <script type="text/javascript" src="/assets/scripts/hamburger.js"></script>
 </body>
 </html>
