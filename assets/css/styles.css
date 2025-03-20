@@ -172,9 +172,24 @@ ul {
   height: 100%;
   pointer-events: none;
   background-image: url("/assets/images/lock_doodle_yellower.svg");
-  background-size: 8%;
+  background-size: 8em;
   background-repeat: repeat;
   animation: floatBackground 50s infinite linear;
+}
+@media screen and (max-width: 1500px) {
+  .background-container::after {
+    animation: floatBackground 80s infinite linear;
+  }
+}
+@media screen and (max-width: 700px) {
+  .background-container::after {
+    animation: floatBackground 110s infinite linear;
+  }
+}
+@media screen and (max-width: 460px) {
+  .background-container::after {
+    animation: floatBackground 150s infinite linear;
+  }
 }
 
 @keyframes floatBackground {
@@ -320,6 +335,9 @@ ul {
   object-fit: contain;
   border-radius: 20%;
   background-color: var(--text);
+}
+.sponsors .sponsor-images #batelle, .sponsors .sponsor-images #AmericanExpress, .sponsors .sponsor-images #HackTheBox {
+  background-color: transparent;
 }
 .sponsors .sponsor-images div {
   display: flex;

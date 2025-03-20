@@ -169,9 +169,18 @@ ul {
     height:100%;
     pointer-events: none;
     background-image: url('/assets/images/lock_doodle_yellower.svg');
-    background-size: 8%;
+    background-size: 8em;
     background-repeat: repeat;
     animation: floatBackground 50s infinite linear;
+    @media screen and (max-width: 1500px) {
+        animation: floatBackground 80s infinite linear;
+    }
+    @media screen and (max-width: 700px) {
+        animation: floatBackground 110s infinite linear;
+    }
+    @media screen and (max-width: 460px) {
+        animation: floatBackground 150s infinite linear;
+    }
   }
   
   @keyframes floatBackground {
@@ -328,6 +337,10 @@ ul {
             object-fit: contain;
             border-radius: 20%;
             background-color: var(--text);
+        }
+
+        #batelle, #AmericanExpress, #HackTheBox {
+            background-color: transparent;
         }
 
         div {
