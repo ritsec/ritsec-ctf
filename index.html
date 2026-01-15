@@ -1,322 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>RITSEC CTF</title>
-
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <link rel="icon" type="image/png" href="/assets/images/favicon.ico">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RITSEC CTF 2026</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="background-container">
-    <nav class="navigation">
-        <img src="/assets/images/logo192.png" alt="RITSEC logo." class="onpagelogo">
-        <ul class="navigation-menu">
-          <li class="navigation-item">
-            <a href="https://www.ritsec.club/" class="navigation-link">Home</a>
-          </li>
-          <li class="navigation-item">
-            <a href="https://discord.gg/aNP8BupNmg" class="navigation-link">CTF Discord</a>
-          </li>
-          <li class="navigation-item">
-            <a href="https://ctfd.ritsec.club/register" class="navigation-link">Register</a>
-          </li>
-          <li class="navigation-item">
-            <a href="https://ctftime.org/ctf/170" class="navigation-link">CTFTime</a>
-          </li>
-        </ul>
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-    </nav>
-    <div class="main-container">
-        <div class="image-wrapper fade-border-multi">
-          <img src="assets/images/competition_logos/ritsec_green-fixed.svg" alt="RITSEC CTF 2025 Logo" class="logo25">
-        </div>
-        <h1>RITSEC CTF 2025:</h1>
-        <h6>Friday March 21st 17:00 - Sunday March 23rd 17:00 EDT</h6>
-        <a href="https://gitlab.ritsec.cloud/competitions/ctf-2025-public">Competition Source</a>
-        <div class="sections">
-            <section class="about">
-                <h4>About</h4>
-                <p>RITSEC CTF is a cybersecurity Capture The Flag competition that features categories such as PWN, Cryptography, Reversing, Forensics, Web, and Misc.<br/> We welcome beginners and more advanced security friends!</p>
-                <a href="https://discord.gg/aNP8BupNmg">https://discord.gg/aNP8BupNmg</a>
-                <h4>Registration</h4>
-                <p>In order to register for the competition, please follow the link below:</p>
-                <a href="https://ctfd.ritsec.club/register">https://ctfd.ritsec.club/register</a>
-            </section>
-            <div class="subsections-row-one">
-              <section class="theme-description">
-                <h4>Theme</h4>
-                <p>This is an emergency declaration public service announcement warning all humans. We have just received an encrypted message from the giant floating <strong>Alien</strong> ship hovering above Rochester, NY. We captured it here:</p>
-                <div class="alien-message">
-                  <p>Jz!</p>
-                  <p>Xp lyo xj mfooj Rwzcmz hlyyl dpp hsle j'lww nly oz. Dpyo dzxp zq jzfc rcplepde njmpc hlcctzcd zc hslepgpc dz hp nly pglwflep jzf tq jzf'cp hplv pyzfrs ez tyglop wzw.</p>
-                  <p>Mpde htdspd,</p>
-                  <p>Dsxpprwp Dsxzca lyo Rwzcmz Rwzcmzmpcdzy</p>
-                </div>
-                <br/>
-                <p>We are looking for the world's best hackers to prove to these Aliens that we will not be pushed around. Your task is to help save the world before it’s too late!</p>
-              </section>
-              <section class="rules">
-                <h4>RITSEC CTF 2025 General Rules</h4>
-                <ol class="rules-list">
-                  <li>There should be no cooperation between teams. Sharing flags, hints, or any other information about a challenge with anyone other than your team or a CTF organizer during the CTF is prohibited.</li><br/>
-                  <li>Do not direct message challenge authors in any attempt to receive hints and other information about the challenges. All communication will be through the RITSEC CTF Discord server. If you believe that a challenge is down or broken you can state it in the relevant channel.</li><br/>
-                  <li>Do not attack the CTF or RITSEC infrastructure. This includes the webservers running the CTF engine, the challenge servers, any devices on the RIT network, and any other services used to run the CTF. If you aren't sure if you should be accessing something, ask a CTF organizer.</li><br/>
-                  <li>Do not attack, harass, or otherwise act in a way that degrades the CTF experience for other teams.</li><br/>
-                  <li>Do not guess or brute force submissions.</li><br/>
-                  <li>No challenges require or call for Denial of Service attacks, and DoS attacks are prohibited.</li><br/>
-                  <li>Challenges that involve accessing a service over the network (such as Web or PWN challenges) will provide the URL and port number required for the challenge. No challenges will require any sort of network or service enumeration, and these activities are prohibited.</li><br/>
-                  <li>Connecting to ports and services that are not explicitly stated for challenges or tampering with the CTFd/OKD backend is prohibited.</li><br/>
-                  <li>There are two brackets, RIT students and everyone else.</li><br/>
-                  <li>Any given team is only eligible for one prize category.</li><br/>
-                  <li>To be eligible for an external student prize, all members must be enrolled at the educational institution they are representing. If won, the members must provide proof of enrollment for each member.</li><br/>
-                  <li>Prizes are not legally guaranteed and RITSEC is not responsible for any loss, nonreceipt, or misuse of goodies. This includes how goodies are divided amongst team members when provided to the team captain or non-competing team organizer.</li><br/>
-                  <li>Anyone participating in the CTF is subject to the RITSEC Code of Conduct, as described in Article 9 of the RITSEC Constitution. This can be found at <a href="https://github.com/ritsec/constitution">https://github.com/ritsec/constitution</a></li>  
-                </ol>
-              </section>
-              <section class="prizes">
-                <h4>Prizes</h4>
-                <p>The following prizes will be awarded to winners of the competition:</p>
-                <strong>RIT Teams:</strong>
-                  <p>1st Place <br/>
-                    5x MetaCTF OnDemand Labs 1 year subscriptions + 5x Silver Subscription to HTB Academy + 5x Raspberry Pi 5/16GB + 1x Offsec SEC-100 Essentials Course</p>
-                  <p>2nd Place <br/>
-                    5x MetaCTF OnDemand Labs 6 months subscriptions + 5x HTB Pro Labs 1 year subscription + 5x Keycron Keyboards</p>
-                  <p>3rd Place <br/>
-                    5x MetaCTF OnDemand Labs 3 months subscriptions + 5x HTB Pro Labs 6 months subscription + 5x Malicious Cable Detector by O.MG</p>
-                  <p>4th Place <br/>
-                    5x MetaCTF OnDemand Labs 2 months subscriptions</p>
-                  <p>5th Place <br/>
-                    5x MetaCTF OnDemand Labs 1 month subscriptions<br/></p>
-                  
-                <strong>External US Academic Teams:</strong>
-                  <p>1st Place <br/>
-                    5x MetaCTF OnDemand Labs 1 year subscriptions + 5x Silver Subscription to HTB Academy</p>
-                  <p>2nd Place <br/>
-                    5x MetaCTF OnDemand Labs 6 months subscriptions + 5x HTB Pro Labs 1 year subscription</p>
-                  <p>3rd Place <br/>
-                    5x MetaCTF OnDemand Labs 3 months subscriptions + 5x HTB Pro Labs 6 months subscription</p>
-                  <p>4th Place <br/>
-                    5x MetaCTF OnDemand Labs 2 months subscriptions </p>
-                  <p>5th Place <br/>
-                    5x MetaCTF OnDemand Labs 1 month subscriptions </p>
-              </section>
-            </div>
-            <section class="previous-ctfs">
-              <h4>Previous Competitions</h4>
-              <div class="previous-ctfs-container">
-                <div class="previous-ctfs-imgs">
-                  <img src="assets/images/competition_logos/ritsec_ctf_2024.jpg" id="ctf24">
-                  <img src="assets/images/competition_logos/ritsec_ctf_2018.png" id="ctf18">
-                </div>
-                
-                <ul>
-                  <li><a href="https://gitlab.ritsec.cloud/competitions/ctf-2024">RITSEC CTF 2024</a></li>
-                  <li><a href="https://gitlab.ritsec.cloud/competitions/ctf-2023-public">RITSEC CTF 2023</a></li>
-                  <li><a href="https://gitlab.ritsec.cloud/competitions/ctf-2022">RITSEC CTF 2022</a></li>
-                  <li><a href="https://gitlab.ritsec.cloud/competitions/ctf-2021">RITSEC CTF 2021</a></li>
-                  <li><a href="https://github.com/ritsec/RITSEC-CTF-2019">RITSEC CTF 2019</a></li>
-                  <li><a href="https://github.com/ritsec/RITSEC-CTF-2018">RITSEC CTF 2018</a></li>
-                  <li>RC3 CTF 2017</li>
-                  <li>RC3 CTF 2016</li>
-                </ul>
-              </div>
-            </section>
-            <section class="sponsors">
-                <h4>Sponsors</h4>
-                <p>RITSEC is proudly sponsored by:</p>
-                <div class="sponsor-images">
-                  <div class="diamond-sponsors">
-                    <h6>Diamond</h6>
-                    <div class="imgset">
-                      <img src="/assets/images/sponsors/google.png" alt="Google" id="google">
-                      <img src="/assets/images/sponsors/eaton.png" alt="Eaton" id="eaton">
-                    </div>
-                  </div>
-                  <div class="platinum-sponsors">
-                    <h6>Platinum</h6>
-                    <div class="imgset">
-                      <img src="/assets/images/sponsors/sra.png" alt="Security Risk Advisors" id="sra">
-                      <img src="/assets/images/sponsors/battelle.jpg" alt="Battelle" id="battelle">
-                      <img src="/assets/images/sponsors/fm.png" alt="FM" id="FM">
-                      <img src="/assets/images/sponsors/icrinc.jpg" alt="ICR, Inc." id="ICR">
-                      <img src="/assets/images/sponsors/amplify.jpeg" alt="Amplify" id="Amplify">
-                      <img src="/assets/images/sponsors/datadog.png" alt="Datadog" id="Datadog">   
-                    </div>
-                  </div>
-                  <div class="gold-sponsors">
-                    <h6>Gold</h6>
-                    <div class="imgset">
-                      <img src="/assets/images/sponsors/miscreants.svg" alt="Miscreants" id="miscreants">
-                      <img src="/assets/images/sponsors/amex.png" alt="American Express" id="AmericanExpress"> 
-                    </div>
-                  </div>
-                  <div class="silver-sponsors">
-                    <h6>Silver</h6>
-                    <div class="imgset">
-                      <img src="/assets/images/sponsors/wingsover.png" alt="Wings Over" id="Wings Over"> 
-                      <img src="/assets/images/sponsors/mindex.jpeg" alt="Mindex" id="mindex">
-                    </div>
-                  </div>
-                  <div class="educational-sponsors">
-                    <h6>Educational</h6>
-                    <div class="imgset">
-                      <img src="/assets/images/sponsors/nostarchpress.png" alt="No Starch Press" id="nostarchpress">
-                      <img src="/assets/images/sponsors/fortra-logo-forest-green.png" alt="Fortra" id="fortra">
-                      <img src="/assets/images/sponsors/metactf.png" alt="MetaCTF" id="MetaCTF"> 
-                      <img src="/assets/images/sponsors/OffSec_Tagline_Full_Color_2_1.jpg" alt="Offsec" id="Offsec">
-                      <img src="/assets/images/sponsors/hackthebox.png" alt="HackTheBox" id="HackTheBox">
-                    </div>
-                  </div>
-                </div>
-            </section>
-        </div>
+<div class="container">
+  <nav>
+    <a href="#" class="nav-link">Home</a>
+    <a href="https://discord.gg/uSPh4CHG7n" target="_blank" class="nav-link">CTF Discord</a>
+    <a href="#" class="nav-link" onclick="alert('2026 registration is not yet open. Check back later, but join the Discord in the meantime!');">Register</a>
+    <a href="https://ctftime.org/ctf/170" target="_blank" class="nav-link">CTFTime</a>
+  </nav>
+
+  <header class="hero">
+    <div class="logo-container">
+      <div class="logo-placeholder">
+        <img src="assets/images/ritsec-26_logo.png" alt="RITSEC CTF 2026 Logo" style="width:30em;">
+      </div>
+    </div>
+    <h1>RITSEC CTF 2026:</h1>
+    <h6 class="event-date">Dates TBA (late March or early April)</h6>
+    <a href="#" class="btn-primary">Competition Source</a><br>
+    <small>(This will be released after the competition is over. Click <a href="#previous-competitions" class="btn-link">here</a> for previous competition sources.)</small>
+  </header>
+
+  <div class="card-section compact">
+    <div class="info-grid">
+      <section class="info-block" id="about">
+        <h2>About</h2>
+        <p>RITSEC CTF is a cybersecurity Capture The Flag competition featuring challenges in many categories including PWN, cryptography, reversing, forensics, web, and more. Difficulties range from beginner-level to advanced challenges.</p>
+        <a href="https://discord.gg/uSPh4CHG7n" target="_blank" class="btn-link">Join Discord</a>
+      </section>
+      <section class="info-block" id="registration">
+        <h2>Registration</h2>
+        <p>Register for the competition using the link below:</p>
+        <a href="#" onclick="alert('2026 registration is not yet open. Check back later, but join the Discord in the meantime!');" class="btn-accent">Register Now</a>
+      </section>
     </div>
   </div>
-    <footer class="footer">
-        <div class="footer-info">
-            <div class="footer-title">
-              RITSEC
-            </div>
-          </div>
-          <div class="footer-socials">
-            <a
-            class="social-link"
-            rel="me"
-            target="_blank"
-            href="mailto:ctf@ritsec.club"
-            title="Mail"
-          >
-            <svg
-              aria-hidden="true"
-              focusable="false"
-              role="img"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 8 6"
-            >
-            <path 
-            fill="currentColor"
-            d="m0 0h8v6h-8zm.75 .75v4.5h6.5v-4.5zM0 0l4 3 4-3v1l-4 3-4-3z"/>
-            </svg>
-          </a> 
-            <a
-              class="social-link"
-              rel="me"
-              target="_blank"
-              href="https://github.com/ritsec"
-              title="GitHub"
-            >
-              <svg
-                aria-hidden="true"
-                focusable="false"
-                role="img"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 496 512"
-              >
-                <path
-                  fill="currentColor"
-                  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
-                ></path>
-              </svg>
-            </a> 
-            <a
-              class="social-link"
-              rel="me"
-              target="_blank"
-              href="https://twitter.com/ritsecclub"
-              title="Twitter"
-            >
-              <svg
-                aria-hidden="true"
-                focusable="false"
-                role="img"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512"
-              >
-                <path
-                  fill="currentColor"
-                  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
-                ></path>
-              </svg>
-            </a>
-            <a
-              class="social-link"
-              rel="me"
-              target="_blank"
-              href="https://instagram.com/ritsecclub"
-              title="Instagram"
-            >
-              <svg
-                aria-hidden="true"
-                focusable="false"
-                data-prefix="fab"
-                data-icon="instagram"
-                class="svg-inline--fa fa-instagram fa-w-14"
-                role="img"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 448 512"
-              >
-                <path
-                  fill="currentColor"
-                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-                ></path>
-              </svg>
-            </a>
-            <a
-              class="social-link"
-              rel="me"
-              target="_blank"
-              href="https://youtube.com/c/RITSEC"
-              title="YouTube"
-            >
-              <svg
-                aria-hidden="true"
-                focusable="false"
-                role="img"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 576 512"
-              >
-                <path
-                  fill="currentColor"
-                  d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"
-                ></path>
-              </svg>
-            </a>
-            <a
-              class="social-link"
-              rel="me"
-              target="_blank"
-              href="https://discord.com/invite/W7NefdyzHZ"
-              title="Discord"
-            >
-              <svg
-                aria-hidden="true"
-                focusable="false"
-                data-prefix="fab"
-                data-icon="discord"
-                class="svg-inline--fa fa-discord fa-w-20"
-                role="img"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 640 512"
-              >
-                <path
-                  fill="currentColor"
-                  d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"
-                ></path>
-              </svg>
-            </a>
-          </div>
-    </footer>
-    <script type="text/javascript" src="/assets/scripts/hamburger.js"></script>
+
+  <div class="two-column-grid">
+    <div class="grid-card" id="theme">
+      <h2>Theme</h2>
+      <p>The theme of RITSEC CTF 2026 is <b>pirates</b>! Read the theme story below to get excited for the competition.</p>
+      <div class="encrypted-message">
+        <p>Yo, ho, ho! Avast, ye curious code-seekers. Beyond the digital horizon lies a treacherous sea where firewalls rise like storm-tossed waves and encrypted secrets are buried deeper than Davy Jones' locker.</p><br>
+        <p>Long ago, a rogue fleet of hackers charted these waters, leaving behind cursed binaries, booby-trapped packets, and riddles only the sharpest minds could plunder. Now the call has gone out once more.</p><br>
+        <p>Hoist the black flag, sharpen yer wits, and ready yer tools, for only those bold enough to breach the defenses and claim the hidden flags will earn their share of the treasure. Fortune favors the clever, the relentless, and the fearless...</p><br>
+        <p>So set sail, matey, and prove ye belong among the legends of the cyber seas!</p>
+      </div>
+      <p>Be ready for a swashbuckling adventure coming soon!</p>
+    </div>
+
+    <div class="grid-card" id="prizes">
+      <h2>Prizes</h2>
+      <div class="prize-category">
+        <h3>RIT Teams:</h3>
+        <div class="prize-tier">
+          <h4>1st Place</h4>
+          <p>Placeholder prizes</p>
+        </div>
+        <div class="prize-tier">
+          <h4>2nd Place</h4>
+          <p>Placeholder prizes</p>
+        </div>
+        <div class="prize-tier">
+          <h4>3rd Place</h4>
+          <p>Placeholder prizes</p>
+        </div>
+      </div>
+      <div class="prize-category">
+        <h3>External U.S. Academic Teams:</h3>
+        <div class="prize-tier">
+          <h4>1st Place</h4>
+          <p>Placeholder prizes</p>
+        </div>
+        <div class="prize-tier">
+          <h4>2nd Place</h4>
+          <p>Placeholder prizes</p>
+        </div>
+        <div class="prize-tier">
+          <h4>3rd Place</h4>
+          <p>Placeholder prizes</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="rules-section">
+    <h2>RITSEC CTF 2026 General Rules</h2>
+    <ol class="rules-list">
+      <li><em>Treat everyone with respect.</em> Absolutely no harassment, witch hunting, sexism, racism, or hate speech of any kind will be tolerated.</li>
+      <li><em>No spam or self-promotion.</em> Unless you have express permission from a member of the RITSEC CTF team, you may not promote servers or post advertisements.</li>
+      <li><em>No NSFW or obscene content.</em> This includes text, images, or links featuring nudity, sex, hard violence, or other graphically disturbing content.</li>
+      <li><em>Do not attack the infrastructure.</em> The RITSEC CTF infrastructure is not part of the challenges. The use of penetration tools such as Nmap and DirBuster on the CTF infrastructure is strictly prohibited.</li>
+      <li><em>Do not give out flags or hints.</em> To keep this CTF as fair as possible, do not share any hints or answers with anyone outside of your team. You may discuss specific challenges in public channels only as long as you do not give away crucial information.</li>
+      <li><em>Do not ask anyone for flags or hints.</em> This includes event participants/organizers as well as Q&amp;A websites such as StackOverflow and Quora. You are, however, encouraged to create a ticket with any questions you may have.</li>
+      <li><em>No flag-hoarding.</em> When you get a flag, submit it right away. It is important that you do not hoard flags to ensure that teams know exactly where they stand every step of the way.
+      <li>If you see anything that breaks one or more of these rules (including public messages, DMs, etc.), reach out to an admin (@Staff on Discord) and let them know as soon as possible.</li>
+      <li>Failure to follow these rules may result in message deletion, bans, score freezes, point deductions, etc.</li>
+      <li>These rules are interpreted at the discretion of the RITSEC CTF team. As such, all decisions are final and unappealable.</li>
+    </ol>
+    <p style="text-align: center; margin-top: 20px;">Anyone participating must abide by our code of conduct, which can be found in Article 9 of the <a href="https://github.com/ritsec/constitution/releases" target="_blank" class="btn-link">RITSEC Constitution</a>.</p>
+  </section>
+
+  <section class="prev-competitions">
+    <h2 id="previous-competitions">Previous Competitions</h2>
+    <ul>
+      <li><a href="https://gitlab.ritsec.cloud/competitions/ctf-2025-public" target="_blank">RITSEC CTF 2025</a></li>
+      <li><a href="https://gitlab.ritsec.cloud/competitions/ctf-2024" target="_blank">RITSEC CTF 2024</a></li>
+      <li><a href="https://gitlab.ritsec.cloud/competitions/ctf-2023-public" target="_blank">RITSEC CTF 2023</a></li>
+      <li><a href="https://gitlab.ritsec.cloud/competitions/ctf-2022" target="_blank">RITSEC CTF 2022</a></li>
+      <li><a href="https://gitlab.ritsec.cloud/competitions/ctf-2021" target="_blank">RITSEC CTF 2021</a></li>
+      <li><a href="https://github.com/ritsec/RITSEC-CTF-2019" target="_blank">RITSEC CTF 2019</a></li>
+      <li><a href="https://github.com/ritsec/RITSEC-CTF-2018" target="_blank">RITSEC CTF 2018</a></li>
+      <li><span>RC3 CTF 2017</span></li>
+      <li><span>RC3 CTF 2016</span></li>
+    </ul>
+  </section>
+
+  <section class="sponsors-section">
+    <h2>Sponsors</h2>
+    <p style="text-align: center;">RITSEC is proudly sponsored by:</p>
+    <small><p style="text-align: center; margin-bottom: 30px;">(Sponsors section coming soon. In the meantime, you can check out RITSEC's sponsors <a href="https://ritsec.club/sponsors" target="_blank" class="btn-link">here</a>.)</p></small>
+
+<!--    <div class="sponsor-tier">-->
+<!--      <h3>Diamond</h3>-->
+<!--      <div class="sponsor-logos diamond">-->
+<!--        <div class="sponsor-placeholder">-->
+<!--          <img src="assets/images/sponsors/google.png" alt="Google Logo">-->
+<!--        </div>-->
+<!--        <div class="sponsor-placeholder">-->
+<!--          <img src="assets/images/sponsors/eaton.png" alt="Eaton Logo">-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+
+<!--    <div class="sponsor-tier">-->
+<!--      <h3>Platinum</h3>-->
+<!--      <div class="sponsor-logos platinum">-->
+<!--        <div class="sponsor-placeholder">-->
+<!--          <img src="assets/images/sponsors/sra.png" alt="SRA Logo">-->
+<!--        </div>-->
+<!--        <div class="sponsor-placeholder">-->
+<!--          <img src="assets/images/sponsors/battelle.jpg" alt="Battelle Logo">-->
+<!--        </div>-->
+<!--        <div class="sponsor-placeholder">-->
+<!--          <img src="assets/images/sponsors/fm.png" alt="FM Logo">-->
+<!--        </div>-->
+<!--        <div class="sponsor-placeholder">-->
+<!--          <img src="assets/images/sponsors/icrinc.jpg" alt="iCR Logo">-->
+<!--        </div>-->
+<!--        <div class="sponsor-placeholder">-->
+<!--          <img src="assets/images/sponsors/amplify.jpeg" alt="Amplify Logo">-->
+<!--        </div>-->
+<!--        <div class="sponsor-placeholder">-->
+<!--          <img src="assets/images/sponsors/datadog.png" alt="Datadog Logo">-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+
+<!--    <div class="sponsor-tier">-->
+<!--      <h3>Gold</h3>-->
+<!--      <div class="sponsor-logos gold">-->
+<!--        <div class="sponsor-placeholder">-->
+<!--          <img src="assets/images/sponsors/miscreants.svg" alt="Miscreants Logo">-->
+<!--        </div>-->
+<!--        <div class="sponsor-placeholder">-->
+<!--          <img src="assets/images/sponsors/amex.png" alt="AMEX Logo">-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+
+<!--    <div class="sponsor-tier">-->
+<!--      <h3>Silver</h3>-->
+<!--      <div class="sponsor-logos silver">-->
+<!--        <div class="sponsor-placeholder">Sponsor Logo</div>-->
+<!--        <div class="sponsor-placeholder">Sponsor Logo</div>-->
+<!--      </div>-->
+<!--    </div>-->
+
+<!--    <div class="sponsor-tier">-->
+<!--      <h3>Educational</h3>-->
+<!--      <div class="sponsor-logos educational">-->
+<!--        <div class="sponsor-placeholder">Sponsor Logo</div>-->
+<!--        <div class="sponsor-placeholder">Sponsor Logo</div>-->
+<!--        <div class="sponsor-placeholder">Sponsor Logo</div>-->
+<!--      </div>-->
+<!--    </div>-->
+  </section>
+
+  <footer>
+    <p>&copy; 2026 RITSEC. All rights reserved.</p>
+  </footer>
+</div>
 </body>
 </html>
