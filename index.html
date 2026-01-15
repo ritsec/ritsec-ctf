@@ -11,8 +11,8 @@
 <div class="container">
   <nav>
     <a href="#" class="nav-link">Home</a>
-    <a href="https://discord.gg/uSPh4CHG7n" target="_blank" class="nav-link">CTF Discord</a>
-    <a href="#" class="nav-link" onclick="alert('2026 registration is not yet open. Check back later, but join the Discord in the meantime!');">Register</a>
+    <a href="https://discord.gg/uSPh4CHG7n" target="_blank" class="nav-link">Join Discord</a>
+    <a href="#" class="nav-link" onclick="alert('2026 registration is not yet open. Check back later, but join the Discord in the meantime!');">CTF Website</a>
     <a href="https://ctftime.org/ctf/170" target="_blank" class="nav-link">CTFTime</a>
   </nav>
 
@@ -198,5 +198,26 @@
     <p>&copy; 2026 RITSEC. All rights reserved.</p>
   </footer>
 </div>
+<button id="back-to-top" title="Back to top">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+    <path d="M12 4l-8 8h5v8h6v-8h5z"/>
+  </svg>
+</button>
+
+<script>
+  const backToTop = document.getElementById('back-to-top');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 200) {
+      backToTop.classList.add('visible');
+    } else {
+      backToTop.classList.remove('visible');
+    }
+  });
+
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
 </body>
 </html>
